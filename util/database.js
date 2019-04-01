@@ -7,7 +7,7 @@ const config = {
   database: "nodejs"
 };
 
-db = new sql.ConnectionPool(config)
+const db = new sql.ConnectionPool(config)
   .connect()
   .then(pool => {
     console.log("Connnected to MSSQL");
